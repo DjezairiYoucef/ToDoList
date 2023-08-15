@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amiri", serif;
+}
+body {
+  background-color: #10009c;
+}
+.section {
+  background-color: #10009c;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+}
+.title {
+  display: flex;
+  padding: 10px 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  background-color: rgb(0, 72, 255);
+  color: #fff;
+}
+.add {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  color: black;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  cursor: pointer;
+  color: #10009c;
+}
+
+/* ############################################################# */
+
+.content {
+  width: 60%;
+  background: #d1cdcd;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list {
+  width: 96%;
+  background: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 5px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.done {
+  background: rgba(137, 252, 137, 0.671);
+}
+.icons {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  width: 300px;
+  justify-content: space-between;
+}
+.edit,
+.check,
+.delete,
+.close {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+}
+.edit {
+  background-color: rgb(0, 76, 255);
+}
+.check {
+  background-color: green;
+}
+.delete {
+  background-color: red;
+}
+.close {
+  background-color: #7b00b8;
+}
+.txt-date {
+  width: 200px;
+}
+.txt-date h2 {
+  font-size: 25px;
+  text-align: right;
+}
+.txt-date p {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+}
+/*  let addMession = prompt("enter what you gonna do today");
+
+  // create a new List
+  NewList = ` <div class="list">
+<div class="txt-date">
+  <h2 class="prompt">${addMession}</h2>
+  <p>
+  ${formattedDate}
+    <span class="material-symbols-outlined"> calendar_month </span>
+  </p>
+</div>
+<div class="icons">
+  <span class="material-symbols-outlined edit"> edit </span>
+  <span class="material-symbols-outlined check"> check </span>
+  <span class="material-symbols-outlined delete"> delete </span>
+</div>
+</div>`; */
