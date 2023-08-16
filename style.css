@@ -65,6 +65,7 @@ body {
   justify-content: space-between;
   flex-direction: row-reverse;
   align-items: center;
+  min-height: 100px;
 }
 .done {
   background: rgba(137, 252, 137, 0.671);
@@ -136,3 +137,45 @@ body {
   <span class="material-symbols-outlined delete"> delete </span>
 </div>
 </div>`; */
+
+/* ====================== media query ============= */
+@media (max-width: 1029px) {
+  body {
+    width: 100%;
+  }
+  .section {
+    width: 100%;
+  }
+  .title {
+    width: 96%;
+  }
+  .content {
+    width: 96%;
+  }
+  .list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .txt-date {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+  }
+  #none {
+    display: none;
+  }
+  .txt-date h2 {
+    flex: 1;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 50%;
+    justify-content: space-between;
+  }
+}

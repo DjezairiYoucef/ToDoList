@@ -55,7 +55,7 @@ function addToHTML() {
           <div class="txt-date">
             <h2 class="prompt">${task.title}</h2>
             <p>
-            ${date()}
+            ${task.date}
               <span class="material-symbols-outlined"> calendar_month </span>
             </p>
           </div>
@@ -79,14 +79,19 @@ addToHTML();
 
 add.addEventListener("click", () => {
   let titleTask = prompt("المرجو ادخال عنوان المهمة");
-  let taskobject = {
-    title: titleTask,
-    date: date(),
-    done: false,
-  };
-  tasks.push(taskobject);
-  editLS();
-  addToHTML();
+  let time = prompt("اكتب تاريخ المهمة", date());
+  if (titleTask == "" || time == "") {
+    alert("المرجو ادخال كل المعلومات");
+  } else {
+    let taskobject = {
+      title: titleTask,
+      date: time,
+      done: false,
+    };
+    tasks.push(taskobject);
+    editLS();
+    addToHTML();
+  }
 });
 
 function date() {
